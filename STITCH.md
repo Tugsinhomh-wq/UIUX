@@ -16,4 +16,4 @@ npm run stitch:serve -- -p <project-id> --port 3000     # พรีวิว
 ```
 
 ## ใช้ผ่าน Claude Code (MCP)
-`.mcp.json` ตั้งค่า server `stitch` ไว้แล้ว โดยอ่าน key จาก `STITCH_API_KEY`
+`.mcp.json` ตั้งค่า server `stitch` แบบ HTTP (`https://stitch.googleapis.com/mcp`) ไว้แล้ว โดยอ่าน key จาก `STITCH_API_KEY`
