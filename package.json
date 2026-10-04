@@ -1,0 +1,28 @@
+{
+  "name": "uiux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "stitch": "stitch",
+    "stitch:login": "stitch login",
+    "stitch:status": "stitch status",
+    "stitch:capture": "stitch capture",
+    "stitch:serve": "stitch serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tugsinhomh-wq/UIUX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tugsinhomh-wq/UIUX/issues"
+  },
+  "homepage": "https://github.com/Tugsinhomh-wq/UIUX#readme",
+  "devDependencies": {
+    "@google/stitch": "^0.11.0"
+  },
+  "private": true
+}
