@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <defs>
+    <!-- Fonts & Styling -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&amp;family=Noto+Serif+Thai:wght@600;700;900&amp;display=swap');
+      
+      .thai-font-curved-top {
+        font-family: 'Sarabun', 'Noto Serif Thai', 'Leelawadee UI', 'Krub', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        fill: #173F2D;
+        letter-spacing: 2px;
+      }
+      .thai-font-curved-bot {
+        font-family: 'Sarabun', 'Noto Serif Thai', 'Leelawadee UI', 'Krub', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        fill: #173F2D;
+        letter-spacing: 2.5px;
+      }
+      .main-title {
+        font-family: 'Noto Serif Thai', 'Sarabun', 'TH Sarabun New', serif;
+        font-size: 68px;
+        font-weight: 900;
+        fill: #173F2D;
+        letter-spacing: 1.5px;
+        text-shadow: 0px 1px 0px rgba(197, 155, 39, 0.4);
+      }
+      .sub-title {
+        font-family: 'Sarabun', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        fill: #C59B27;
+        letter-spacing: 3px;
+      }
+      .botanical-tag {
+        font-family: 'Sarabun', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        fill: #173F2D;
+        opacity: 0.85;
+        letter-spacing: 2px;
+      }
+    </style>
+
+    <!-- Drop Shadow for Badge Elevation -->
+    <filter id="badge-shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#173F2D" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+
+    <!-- Inner Emboss / Glow Filter for Medallion Texture -->
+    <radialGradient id="antiqueIvoryGrad" cx="50%" cy="48%" r="52%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#FAF8F2" />
+      <stop offset="100%" stop-color="#F2EDE0" />
+    </radialGradient>
+
+    <!-- Flower Petal Gradients (Rang Jued: Thunbergia laurifolia) -->
+    <linearGradient id="petalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9183BD" />
+      <stop offset="50%" stop-color="#7D6FA8" />
+      <stop offset="100%" stop-color="#5D4E8C" />
+    </linearGradient>
+
+    <linearGradient id="petalGrad2" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#A598CE" />
+      <stop offset="60%" stop-color="#7D6FA8" />
+      <stop offset="100%" stop-color="#4B3D77" />
+    </linearGradient>
+
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D6A4F" />
+      <stop offset="100%" stop-color="#173F2D" />
+    </linearGradient>
+
+    <radialGradient id="goldPistil" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0A0" />
+      <stop offset="45%" stop-color="#E5BE42" />
+      <stop offset="90%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#8F6B10" />
+    </radialGradient>
+
+    <!-- Circular Text Paths (Radius calibrated for exact centering in margin ring) -->
+    <!-- Center is (600, 600). Top ring text radius = 462px. Bottom ring text radius = 462px -->
+    <!-- Top Arc: from ~195 deg to ~345 deg (clockwise from left to right over the top) -->
+    <path id="topTextArc" d="M 152,560 A 450,450 0 0,1 1048,560" fill="none" />
+    
+    <!-- Bottom Arc: clockwise from right to left along bottom so text reads upright from left to right -->
+    <!-- Arc running counter-clockwise along bottom or inverted sweep -->
+    <path id="bottomTextArc" d="M 160,640 A 450,450 0 0,0 1040,640" fill="none" />
+  </defs>
+
+  <!-- Plain Pure White Background -->
+  <rect width="1200" height="1200" fill="#FFFFFF" />
+
+  <!-- BADGE ROOT CONTAINER (Fills ~90% of canvas, diameter ~1080px) -->
+  <g transform="translate(0, 0)">
+    
+    <!-- Outer Drop Shadow Backing -->
+    <circle cx="600" cy="600" r="535" fill="#FAF8F2" filter="url(#badge-shadow)" />
+
+    <!-- 1. Outer Deep Botanical Forest Green Ring (#173F2D) -->
+    <circle cx="600" cy="600" r="530" fill="#173F2D" />
+
+    <!-- Outer Beaded Gold Texture on forest green border -->
+    <circle cx="600" cy="600" r="518" fill="none" stroke="#C59B27" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round" opacity="0.85" />
+    <circle cx="600" cy="600" r="510" fill="none" stroke="#C59B27" stroke-width="1.5" />
+
+    <!-- 2. Mid Ring Channel - Warm Antique Ivory Background for Circular Typography (#FAF8F2) -->
+    <circle cx="600" cy="600" r="498" fill="url(#antiqueIvoryGrad)" stroke="#173F2D" stroke-width="3" />
+
+    <!-- 3. Inner Concentric Borders & Guilloche Pattern -->
+    <circle cx="600" cy="600" r="425" fill="none" stroke="#C59B27" stroke-width="2" />
+    <circle cx="600" cy="600" r="418" fill="none" stroke="#C59B27" stroke-width="3.5" />
+    <circle cx="600" cy="600" r="410" fill="none" stroke="#173F2D" stroke-width="1.5" />
+    
+    <!-- Fine inner decorative dot ring -->
+    <circle cx="600" cy="600" r="402" fill="none" stroke="#C59B27" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round" opacity="0.7" />
+
+    <!-- Center Field Antique Ivory Plate -->
+    <circle cx="600" cy="600" r="395" fill="url(#antiqueIvoryGrad)" />
+
+    <!-- Delicate Background Botanical Radial Watermark in center field -->
+    <g opacity="0.06" stroke="#173F2D" stroke-width="1.5" fill="none">
+      <circle cx="600" cy="600" r="350" />
+      <circle cx="600" cy="600" r="310" />
+      <circle cx="600" cy="600" r="270" />
+      <!-- 12-ray subtle starburst -->
+      <path d="M 600,210 L 600,990 M 210,600 L 990,600 M 324,324 L 876,876 M 324,876 L 876,324" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- TRADITIONAL THAI (LAI THAI) FLOURISHES      -->
+    <!-- 4 Diagonal Positions (Kra-nok / Phum Khao Bin inspiration) -->
+    <!-- ========================================== -->
+
+    <!-- Top-Left Flourish (135°) -->
+    <g transform="translate(600, 600) rotate(-135) translate(0, -458)">
+      <path d="M 0,-14 C -6,-9 -14,-4 -18,6 C -15,4 -10,3 -7,5 C -13,11 -12,20 -4,26 C -2,19 1,14 7,12 C 4,16 5,23 9,27 C 11,21 14,18 20,18 C 14,14 11,8 14,-2 C 10,2 6,3 3,0 C 4,-7 1,-12 0,-14 Z" fill="#C59B27" />
+      <circle cx="0" cy="-18" r="3" fill="#C59B27" />
+    </g>
+
+    <!-- Top-Right Flourish (45°) -->
+    <g transform="translate(600, 600) rotate(-45) translate(0, -458)">
+      <path d="M 0,-14 C -6,-9 -14,-4 -18,6 C -15,4 -10,3 -7,5 C -13,11 -12,20 -4,26 C -2,19 1,14 7,12 C 4,16 5,23 9,27 C 11,21 14,18 20,18 C 14,14 11,8 14,-2 C 10,2 6,3 3,0 C 4,-7 1,-12 0,-14 Z" fill="#C59B27" />
+      <circle cx="0" cy="-18" r="3" fill="#C59B27" />
+    </g>
+
+    <!-- Bottom-Left Flourish (225°) -->
+    <g transform="translate(600, 600) rotate(135) translate(0, -458)">
+      <path d="M 0,-14 C -6,-9 -14,-4 -18,6 C -15,4 -10,3 -7,5 C -13,11 -12,20 -4,26 C -2,19 1,14 7,12 C 4,16 5,23 9,27 C 11,21 14,18 20,18 C 14,14 11,8 14,-2 C 10,2 6,3 3,0 C 4,-7 1,-12 0,-14 Z" fill="#C59B27" />
+      <circle cx="0" cy="-18" r="3" fill="#C59B27" />
+    </g>
+
+    <!-- Bottom-Right Flourish (315°) -->
+    <g transform="translate(600, 600) rotate(45) translate(0, -458)">
+      <path d="M 0,-14 C -6,-9 -14,-4 -18,6 C -15,4 -10,3 -7,5 C -13,11 -12,20 -4,26 C -2,19 1,14 7,12 C 4,16 5,23 9,27 C 11,21 14,18 20,18 C 14,14 11,8 14,-2 C 10,2 6,3 3,0 C 4,-7 1,-12 0,-14 Z" fill="#C59B27" />
+      <circle cx="0" cy="-18" r="3" fill="#C59B27" />
+    </g>
+
+    <!-- Side Separator Ornaments (Left & Right 90 degrees) between Top and Bottom Texts -->
+    <!-- Left Separator -->
+    <g transform="translate(138, 600)">
+      <polygon points="0,-10 8,0 0,10 -8,0" fill="#C59B27" />
+      <circle cx="-16" cy="0" r="3.5" fill="#173F2D" />
+      <circle cx="16" cy="0" r="3.5" fill="#173F2D" />
+    </g>
+    <!-- Right Separator -->
+    <g transform="translate(1062, 600)">
+      <polygon points="0,-10 8,0 0,10 -8,0" fill="#C59B27" />
+      <circle cx="-16" cy="0" r="3.5" fill="#173F2D" />
+      <circle cx="16" cy="0" r="3.5" fill="#173F2D" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- CURVED THAI TEXT IN BORDER CHANNEL         -->
+    <!-- ========================================== -->
+    <!-- Top Arc: "ถอนพิษร้อน • ผื่นคัน • แมลงกัดต่อย" -->
+    <text class="thai-font-curved-top">
+      <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+        ถอนพิษร้อน  •  ผื่นคัน  •  แมลงกัดต่อย
+      </textPath>
+    </text>
+
+    <!-- Bottom Arc: "ยาใช้ภายนอก • สูตรโบราณ" -->
+    <text class="thai-font-curved-bot">
+      <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+        ยาใช้ภายนอก  •  สูตรโบราณ
+      </textPath>
+    </text>
+
+
+    <!-- ========================================== -->
+    <!-- CENTER GRAPHIC: RANG JUED BOTANICAL FLOWER -->
+    <!-- Thunbergia laurifolia (Blooming violet bell/petals with golden throat) -->
+    <!-- ========================================== -->
+    <g id="rang-jued-flower" transform="translate(600, 420)">
+      
+      <!-- Behind Leaves (Botanical Forest Green) -->
+      <!-- Left Leaf -->
+      <path d="M -15,40 C -70,25 -130,-15 -145,-75 C -120,-60 -70,-35 -20,15 Z" fill="url(#leafGrad)" stroke="#173F2D" stroke-width="1.5" />
+      <path d="M -15,40 C -60,10 -110,-30 -145,-75" fill="none" stroke="#3E8E68" stroke-width="1.5" opacity="0.6" />
+      
+      <!-- Right Leaf -->
+      <path d="M 15,40 C 70,25 130,-15 145,-75 C 120,-60 70,-35 20,15 Z" fill="url(#leafGrad)" stroke="#173F2D" stroke-width="1.5" />
+      <path d="M 15,40 C 60,10 110,-30 145,-75" fill="none" stroke="#3E8E68" stroke-width="1.5" opacity="0.6" />
+
+      <!-- Stem & Calyx -->
+      <path d="M -8,55 Q 0,85 5,110 Q 0,85 8,55 Z" fill="#173F2D" />
+      <path d="M -22,45 C -15,25 0,30 0,30 C 0,30 15,25 22,45 C 10,55 -10,55 -22,45 Z" fill="#2D6A4F" stroke="#173F2D" stroke-width="1" />
+
+      <!-- Petals: 5 rounded, graceful lobes typical of Thunbergia laurifolia -->
+      <!-- Top Center Lobe -->
+      <path d="M 0,0 C -45,-55 -60,-130 0,-155 C 60,-130 45,-55 0,0 Z" fill="url(#petalGrad2)" stroke="#5D4E8C" stroke-width="2" />
+      <path d="M 0,-155 C -5,-110 -2,-40 0,0" fill="none" stroke="#B8ACE0" stroke-width="1.5" opacity="0.5" />
+
+      <!-- Top Left Lobe -->
+      <path d="M -10,-10 C -65,-30 -145,-75 -155,-15 C -140,40 -60,20 -10,-10 Z" fill="url(#petalGrad1)" stroke="#5D4E8C" stroke-width="2" />
+      <!-- Top Right Lobe -->
+      <path d="M 10,-10 C 65,-30 145,-75 155,-15 C 140,40 60,20 10,-10 Z" fill="url(#petalGrad1)" stroke="#5D4E8C" stroke-width="2" />
+
+      <!-- Bottom Left Lobe -->
+      <path d="M -8,12 C -60,25 -125,45 -95,100 C -45,115 -25,50 -8,12 Z" fill="url(#petalGrad2)" stroke="#4B3D77" stroke-width="2" />
+      <!-- Bottom Right Lobe -->
+      <path d="M 8,12 C 60,25 125,45 95,100 C 45,115 25,50 8,12 Z" fill="url(#petalGrad2)" stroke="#4B3D77" stroke-width="2" />
+
+      <!-- Delicate Petal Veining Highlights -->
+      <path d="M 0,-15 C -55,-40 -115,-30 -140,-12" fill="none" stroke="#D3C9ED" stroke-width="1.5" opacity="0.6" />
+      <path d="M 0,-15 C 55,-40 115,-30 140,-12" fill="none" stroke="#D3C9ED" stroke-width="1.5" opacity="0.6" />
+      <path d="M 0,5 C -40,35 -75,65 -80,88" fill="none" stroke="#D3C9ED" stroke-width="1.5" opacity="0.6" />
+      <path d="M 0,5 C 40,35 75,65 80,88" fill="none" stroke="#D3C9ED" stroke-width="1.5" opacity="0.6" />
+
+      <!-- Throat/Funnel (Pale Cream Violet gradient opening) -->
+      <ellipse cx="0" cy="5" rx="36" ry="28" fill="#F4EFFC" stroke="#7D6FA8" stroke-width="1.5" />
+      <ellipse cx="0" cy="8" rx="26" ry="20" fill="#FFFBE8" />
+
+      <!-- Golden Throat & Pistil (Characteristic of Thunbergia Flower) -->
+      <path d="M -18,12 Q 0,26 18,12 Q 12,-4 0,-6 Q -12,-4 -18,12 Z" fill="url(#goldPistil)" />
+      
+      <!-- Stigma / Anthers -->
+      <circle cx="-5" cy="4" r="3.5" fill="#C59B27" />
+      <circle cx="5" cy="4" r="3.5" fill="#C59B27" />
+      <circle cx="0" cy="0" r="4" fill="#E5BE42" stroke="#8F6B10" stroke-width="1" />
+      
+      <!-- Dewdrop sparkle -->
+      <circle cx="48" cy="-52" r="3" fill="#FFFFFF" opacity="0.8" />
+      <circle cx="-38" cy="-78" r="2.5" fill="#FFFFFF" opacity="0.7" />
+    </g>
+
+    <!-- Botanical Species Latin Sub-ribbon under flower -->
+    <g transform="translate(600, 565)">
+      <line x1="-120" y1="0" x2="-70" y2="0" stroke="#C59B27" stroke-width="1.5" />
+      <circle cx="-65" cy="0" r="2.5" fill="#C59B27" />
+      <text class="botanical-tag" x="0" y="5" text-anchor="middle">THUNBERGIA LAURIFOLIA</text>
+      <circle cx="65" cy="0" r="2.5" fill="#C59B27" />
+      <line x1="70" y1="0" x2="120" y2="0" stroke="#C59B27" stroke-width="1.5" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- CENTRAL TYPOGRAPHY & TITLES                -->
+    <!-- ========================================== -->
+    
+    <!-- Decorative Gold Divider above Title -->
+    <g transform="translate(600, 600)">
+      <path d="M -220,0 L -50,0 M 50,0 L 220,0" stroke="#C59B27" stroke-width="2" stroke-linecap="round" />
+      <!-- Central traditional crest flourish -->
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#C59B27" />
+      <circle cx="-25" cy="0" r="3.5" fill="#173F2D" />
+      <circle cx="25" cy="0" r="3.5" fill="#173F2D" />
+      <circle cx="-220" cy="0" r="3" fill="#C59B27" />
+      <circle cx="220" cy="0" r="3" fill="#C59B27" />
+    </g>
+
+    <!-- MAIN HEADLINE: "ยาหม่องรางจืด" (Prominent, Bold, Traditional Thai loop terminals) -->
+    <g transform="translate(600, 680)">
+      <!-- Subtle shadow offset for sharp micro-print legibility -->
+      <text class="main-title" x="0" y="0" text-anchor="middle">ยาหม่องรางจืด</text>
+    </g>
+
+    <!-- Decorative Dual Gold Rules framing the subtext -->
+    <g transform="translate(600, 715)">
+      <line x1="-180" y1="0" x2="180" y2="0" stroke="#C59B27" stroke-width="2" />
+      <line x1="-140" y1="5" x2="140" y2="5" stroke="#173F2D" stroke-width="1" opacity="0.6" />
+      <polygon points="0,-4 5,1 0,6 -5,1" fill="#C59B27" />
+    </g>
+
+    <!-- SUB-TEXT: "สมุนไพรธรรมชาติ ๑๐๐%" -->
+    <g transform="translate(600, 765)">
+      <text class="sub-title" x="0" y="0" text-anchor="middle">สมุนไพรธรรมชาติ ๑๐๐%</text>
+    </g>
+
+    <!-- Traditional Apothecary Thai Seal / Quality Mark Emblem -->
+    <g transform="translate(600, 835)">
+      <!-- Traditional diamond/lotus motif -->
+      <rect x="-18" y="-18" width="36" height="36" fill="none" stroke="#C59B27" stroke-width="2" transform="rotate(45)" />
+      <circle cx="0" cy="0" r="10" fill="#173F2D" />
+      <circle cx="0" cy="0" r="4.5" fill="#FAF8F2" />
+      
+      <!-- Side laurel leaves in gold/green -->
+      <path d="M -35,0 C -55,-12 -80,-5 -95,-15 C -85,5 -65,10 -40,5 Z" fill="#C59B27" opacity="0.9" />
+      <path d="M 35,0 C 55,-12 80,-5 95,-15 C 85,5 65,10 40,5 Z" fill="#C59B27" opacity="0.9" />
+      <circle cx="-105" cy="-18" r="3" fill="#173F2D" />
+      <circle cx="105" cy="-18" r="3" fill="#173F2D" />
+    </g>
+
+  </g>
+</svg>
